@@ -3,7 +3,7 @@ Anyway’s docker environment
 
 Docker is an open source project to pack, ship and run any application as a lightweight container.
 
- ![docker png](static/img/docker.png)
+ ![docker png](docker.png)
 
 The idea is to deploy a container (light weight environment) that has all our app dependencies installed and ready to go.
 As a developer you can do one of both:
