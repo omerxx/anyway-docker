@@ -23,7 +23,7 @@ Instructions
 * Please complete ANYWAY’s [“getting the code” section] (https://github.com/hasadna/anyway#getting-the-code) before starting
 
 1. Install docker prerequisites - [Docker toolbox] (https://www.docker.com/docker-toolbox)
-2. Run "Docker terminal”
+2. 2. Run "Docker terminal”
 3. Go to the anyway directory and run:
 
     `docker run --restart="always" -p 80:5000 -v $PWD:/opt/anyway -w /opt/anyway omerxx/anyway-docker /bin/bash -c 'export DATABASE_URL=sqlite:////anyway/local.db && python main.py --open’`
