@@ -29,7 +29,7 @@ Instructions
 **3.** Go to the **anyway** directory and run:
 
     docker run -it --restart="always" -p 80:5000 -v $PWD:/opt/anyway -w /opt/anyway omerxx/anyway-docker /bin/bash -c 'export DATABASE_URL=sqlite:////anyway/local.db && python main.py --open'
-**4.** Access the app at the virtual machine’s IP (usually `192.168.99.100`); 
+**4.** Access the app at the virtual machine’s IP (usually `192.168.99.100`); <br> 
 To retrieve a docker machine address: `docker-machine ip default`
 (no need for port specification, simply an IP; e.g `192.168.99.100`)
 
