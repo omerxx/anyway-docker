@@ -19,7 +19,7 @@ echo 'alias anyway="cd ~/anyway && python main.py"' >> ~/.bashrc
 
 # Fetch repo and install dependencies
 RUN git clone https://github.com/hasadna/anyway && \
-cd anyway && git pull origin dev && pip install -r requirements.txt 
+cd anyway && git pull origin dev && pip install -U setuptools && pip install -r requirements.txt 
 
 RUN export DATABASE_URL=sqlite:///local.db && cd anyway && python models.py && python process.py
 
